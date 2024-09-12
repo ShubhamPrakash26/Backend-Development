@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create new Post</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        <h1>Quora Posts</h1>
+    </header>
+    <section class="create-post-section">
+        <form action="/posts" method="POST">
+            <input type="text" name="user" placeholder="Enter username" class="input-field" /><br><br>
+            <textarea name="content" placeholder="Write your post" class="textarea-field"></textarea><br><br>
+            <input type="submit" value="Create Post" class="submit-button" />
+        </form>
+    </section>
+    <footer>
+        <p class="footer">&copy; 2024 Quora by Shubham Prakash</p>
+    </footer>
+</body>
+</html>
