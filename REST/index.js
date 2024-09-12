@@ -38,6 +38,7 @@ app.post("/posts", (req,res) => {
     let id = uuidv4();
     posts.push({ id, user, content });
     res.redirect("/posts");
+    console.log("Post Created");
 });
 
 app.get("/posts/:id", (req,res) => {
@@ -52,8 +53,8 @@ app.patch("/posts/:id", (req, res)=>{
     let post = posts.find((p) => id === p.id);
     post.content = newContent;
     console.log(post);
-    
     res.redirect("/posts");
+    console.log("Post Updated");
 }); 
 
 app.get("/posts/:id/edit", (req, res)=>{
