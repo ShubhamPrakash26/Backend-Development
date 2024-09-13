@@ -19,7 +19,7 @@
                 <a href="http://localhost:8080/posts/<%=post.id%>" class="see-detail">See in detail</a>&nbsp;&nbsp;
                 <a href="http://localhost:8080/posts/<%=post.id%>/edit" class="edit">Edit</a>&nbsp;&nbsp;
                 <form method="post" action="/posts/<%=post.id%>?_method=DELETE" style="display:inline">
-                    <button>Delete</button>
+                    <button class="sbmt-btn">Delete</button>
                 </form>
             </div>
         <% } %>

@@ -127,6 +127,65 @@ header {
     color: white;
 }
 
+.post-user{
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    color: #555;
+}
+.edit-header{
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.submit-btn:hover {
+    background-color: darkred;
+}
+
+.edit-cont {
+    margin: 0 auto;
+    max-width: 400px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    display: grid;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Centered Submit Button */
+.edit-btn {
+    background-color: maroon;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.edit-btn:hover {
+    background-color: darkred;
+}
+
+.sbmt-btn {
+    padding: 6px;
+    background-color: maroon;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
 @media (max-width: 768px) {
     .post-container {
         flex-direction: column;

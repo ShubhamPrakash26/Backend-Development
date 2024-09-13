@@ -9,13 +9,15 @@
 <body>
     <header>
         <h1>Quora Posts</h1>
+        <a href="http://localhost:8080/posts" class="back-button">Back</a>
     </header>
-    <h2>Edit your Post</h2>
-    <p>Post id: <%=post.id %> </p><br>
-    <p>Post User: @<%=post.user %></p><br>
-    <form method="POST" action="/posts/<%=post.id %>?_method=PATCH">
-        <textarea name="content" rows="10" cols="35"><%= post.content %></textarea><br>
-        <input type="submit" value="Submit"/>
-    </form>
+    <h2 class="edit-header">Edit your Post</h2>
+    <p class="post-user">Post User: @<%=post.user %></p><br>
+    <div>
+        <form method="POST" action="/posts/<%=post.id %>?_method=PATCH">
+            <textarea name="content" rows="10" cols="35" class="edit-cont"><%= post.content %></textarea><br>
+            <button type="submit" class="edit-btn">Submit</button>
+        </form>
+    </div>
 </body>
 </html>
